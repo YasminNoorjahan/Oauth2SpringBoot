@@ -48,9 +48,9 @@ create a sample controller class, here we have created a class called controller
 
 step3: we are going to secure /appkey endpoint using Github. Who are all having github account they can view the key. 
 we are going to creation configuration class which is going to filter the inflow requests. 
-  http
+http
                 .authorizeHttpRequests()
-                        .requestMatchers("/test","/","").permitAll()
+                        .requestMatchers("/aboutApp","/","").permitAll()
                         .anyRequest().authenticated()
                         .and()
                                 .oauth2Login();
@@ -58,16 +58,12 @@ we are going to creation configuration class which is going to filter the inflow
 
 
 How to Run the app?
-Checkout the code
-Run as java application
-go to browser http://localhost:8080/aboutApp, you can see the description
- http://localhost:8080/appKey, it will ask you authorize- as this is an protected endpoint
-
-
-What happened so far?
-You did the integration for oauth2 auth code integration to the spring boot applicaiton
-
-
+Checkout the code.
+Run as a Java application.
+Visit http://localhost:8080/aboutApp to view the description.
+Visit http://localhost:8080/appKey - it will prompt for authorization as this is a protected endpoint.
+Summary:
+You've successfully integrated OAuth 2.0 Authorization Code flow into your Spring Boot application.
 
 
 
