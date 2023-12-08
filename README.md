@@ -57,6 +57,20 @@ we are going to creation configuration class which is going to filter the inflow
 
 
 
+How to Run the app?
+Checkout the code
+Run as java application
+go to browser http://localhost:8080/aboutApp, you can see the description
+ http://localhost:8080/appKey, it will ask you authorize- as this is an protected endpoint
+
+
+What happened so far?
+You did the integration for oauth2 auth code integration to the spring boot applicaiton
+
+
+
+
+
 
 
    
