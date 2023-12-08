@@ -21,23 +21,9 @@ public class controller {
         return "564ABC890";
     }
 
-    @GetMapping("/message")
-    public Map<String,Object> userDetails(Authentication authentication){
-        if (authentication != null && authentication.getPrincipal() instanceof OAuth2User) {
-            OAuth2User oauth2User = (OAuth2User) authentication.getPrincipal();
-       //     String accessToken = authentication.getDetails();
-            System.out.println(((OAuth2User) authentication.getPrincipal()).getAttributes().size());
-            ((OAuth2User) authentication.getPrincipal()).getAttributes().forEach((key,value) -> System.out.println(key+":"+value));
-            //oauth2User.getAccessToken().getTokenValue();
-            /*GitHubUser user = restTemplate.getForObject("https://api.github.com/user?access_token={token}",
-                    GitHubUser.class, accessToken);
-            return ResponseEntity.ok(user);*/
-        }
-        return null;
+    @GetMapping("/aboutApp")
+    public String getAppInfo() {
+        return "This app to explore Oauth Authorization Code grant using SpringBoot security dependencies";
     }
 
-    @GetMapping("/test")
-    public String getMessage() {
-        return "Hi!! ITs me";
-    }
-}
+   }
