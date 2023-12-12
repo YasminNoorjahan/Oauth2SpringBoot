@@ -61,7 +61,7 @@ How to Run the app?
 Checkout the code.
 Run as a Java application.
 Visit http://localhost:8080/aboutApp to view the description.
-Visit http://localhost:8080/appKey - it will prompt for authorization as this is a protected endpoint.
+Visit http://localhost:8080/appKey - it will prompt for authorization as this is a protected endpoint. As this is Auth code grant, user has to authorize then only he will be able to view the response.
 Summary:
 You've successfully integrated OAuth 2.0 Authorization Code flow into your Spring Boot application.
 
